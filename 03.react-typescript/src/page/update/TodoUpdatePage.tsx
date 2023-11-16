@@ -1,7 +1,7 @@
 import Header from "src/layout/header/Header";
 import { useNavigate, useParams } from "react-router-dom";
 import axios, { AxiosResponse } from "axios";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import button from "src/styles/Button.module.css";
 import styles from "src/page/regist/TodoRegist.module.css";
 
@@ -44,6 +44,7 @@ const TodoUpdate = (): JSX.Element => {
 
     useEffect(() => {
         getTodoData();
+         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     // 리랜더링 방지
